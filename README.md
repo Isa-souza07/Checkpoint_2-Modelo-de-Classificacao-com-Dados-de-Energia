@@ -35,26 +35,10 @@ Duas tarefas independentes de aprendizado de máquina com dados públicos de ene
 
 ```
 ├── README.md
-├── Avaliacao_APIs_Energia_Renovavel_ML.ipynb   # notebook completo, executável na ordem
+├── Desafio_Final.ipynb   # notebook completo, executável na ordem
 ├── aneel_classificacao_orange.csv              # dados da Tarefa 1
 └── meteo_regressao_orange.csv                  # dados da Tarefa 2
 ```
-
-## Como executar
-
-**No Google Colab (recomendado)**
-
-1. Abra o notebook no Colab (*Arquivo → Abrir notebook → GitHub* e cole o link do repositório).
-2. Use *Ambiente de execução → Executar tudo*.
-
-**Localmente**
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-jupyter notebook Avaliacao_APIs_Energia_Renovavel_ML.ipynb
-```
-
-O notebook consulta as APIs e regrava os CSVs. Se alguma consulta falhar, ele avisa e usa o CSV de contingência: o arquivo local, se existir, ou o do repositório do professor. Nenhuma credencial é necessária ou deve ser publicada.
 
 ## Metodologia
 
@@ -113,9 +97,3 @@ Valores da execução de referência (conjunto de teste, `random_state=42`). Pod
 - **Erros:** são maiores nas horas centrais do dia, quando os valores de radiação são altos e a nebulosidade pode alterá-los em centenas de W/m².
 - **Divisão temporal:** treino e teste são períodos consecutivos, e a radiação cai com a chegada do inverno. Isso simula prever o futuro, mas cobre só três meses de uma única estação, então os resultados não valem para o ano todo.
 - **Radiação não é geração elétrica:** a radiação (W/m²) é uma estimativa de reanálise para a superfície **horizontal** em um ponto. A geração fotovoltaica depende também de inclinação e orientação dos painéis, área e eficiência, temperatura da célula, sombreamento, sujeira, perdas no inversor e na rede, degradação e disponibilidade. Estimar a radiação é uma etapa para estimar energia (kWh), não a previsão da geração.
-
-## Fontes
-
-- [ANEEL — SIGA](https://dadosabertos.aneel.gov.br/dataset/siga-sistema-de-informacoes-de-geracao-da-aneel)
-- [ANEEL — recurso e campos usados](https://dadosabertos.aneel.gov.br/dataset/siga-sistema-de-informacoes-de-geracao-da-aneel/resource/11ec447d-698d-4ab8-977f-b424d5deee6a)
-- [Open-Meteo — API histórica](https://open-meteo.com/en/docs/historical-weather-api)
