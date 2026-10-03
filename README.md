@@ -15,7 +15,7 @@ Fonte dos dados: [Electrical Grid Stability Simulated Data – UCI](https://arch
 ### **Organização do Checkpoint**<br>
 O Checkpoint será distribuído em quatro partes:
 
-**Parte 1 – Classificação (Aula 06)**
+**Classificação (Aula 06)**
 Desenvolvimento de um modelo de classificação utilizando Regressão Logística para prever a condição da rede elétrica.
 variável target: stabf;
 classes previstas: estável ou instável;
@@ -24,7 +24,7 @@ treinamento do modelo;
 geração das previsões;
 avaliação dos resultados por meio de métricas de classificação e matriz de confusão.
 
-**Parte 2 – Regressão (Aula 07)**
+**Regressão (Aula 07)**
 Desenvolvimento de modelos de Regressão Linear para prever o valor numérico da variável stab.<br>
 Nesta etapa, deverão ser treinados e comparados dois modelos:
 modelo utilizando as cinco variáveis com maior correlação absoluta com stab;
@@ -35,10 +35,6 @@ MAE;
 MSE.
 A análise deverá considerar os resultados dos dois modelos, identificando o efeito da seleção das variáveis sobre o desempenho das previsões.
 
-**Parte 3 – Clustering**
-Aplicação de uma técnica de aprendizado não supervisionado para identificar agrupamentos entre os registros do dataset.
-Nesta parte, serão realizadas a preparação das variáveis, a criação dos grupos e a análise das características observadas em cada agrupamento.
-
-**Parte 4 – Desafio final**
+**Desafio final**
 Desenvolvimento de um desafio final que reunirá os conhecimentos trabalhados nas etapas anteriores.
 O grupo deverá analisar os resultados obtidos, justificar as decisões tomadas durante o desenvolvimento.
